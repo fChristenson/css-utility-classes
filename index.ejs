@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <div class="max-width-laptop margin-center">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="color-black font-family-header font-weight-lighter color-red-hover text-decoration-none" href="#">Home</a></li>
+          <li><a class="color-black font-family-header font-weight-lighter color-red-hover text-decoration-none" href="#">Products</a></li>
+          <li><a class="color-black font-family-header font-weight-lighter color-red-hover text-decoration-none" href="#">Contact</a></li>
+          <li><a class="color-black font-family-header font-weight-lighter color-red-hover text-decoration-none" href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul class="margin-center list-style-none flex">
+        <% products.forEach(product => { %>
+        <li class="width-product-card margin-bottom-md">
+          <img class="width-parent" src="<%= product.url %>" alt="product">
+          <div>
+            <p class="font-family-body font-weight-lighter font-size-md">
+              <%= product.name %>
+            </p>
+            <p class="color-gray font-family-body font-weight-lighter font-size-md">
+              <%= product.brand %>
+            </p>
+            <p class="font-family-body font-weight-lighter font-size-md">
+              <span class="color-red">
+                <%= product.newPrice %></span>
+              <span class="color-gray text-decoration-line-through">
+                <%= product.oldPrice %></span>
+              <span class="color-red">
+                <%= product.savings %></span>
+            </p>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </main>
+  </div>
+  <footer class="bg-color-black min-height-footer"></footer>
+</body>
+
+</html>

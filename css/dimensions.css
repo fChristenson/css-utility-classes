@@ -1,0 +1,27 @@
+.width-product-card {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .width-product-card {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .width-product-card {
+    width: calc(100% / 4);
+  }
+}
+
+.width-parent {
+  width: 100%;
+}
+
+.min-height-footer {
+  min-height: 100px;
+}
+
+.max-width-laptop {
+  max-width: var(--width-laptop);
+}

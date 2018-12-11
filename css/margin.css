@@ -1,0 +1,7 @@
+.margin-center {
+  margin: 0 auto;
+}
+
+.margin-bottom-md {
+  margin-bottom: var(--margin-md);
+}

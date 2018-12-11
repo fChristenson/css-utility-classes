@@ -1,0 +1,10 @@
+:root {
+  --margin-md: 12px;
+  --width-mobile: 320px;
+  --width-pad: 768px;
+  --width-laptop: 1024px;
+
+  --color-gray: #cecece;
+  --color-red: #FFA5A6;
+  --color-black: #3C3C3C;
+}

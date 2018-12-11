@@ -1,0 +1,20 @@
+.color-black {
+  color: var(--color-black); 
+}
+
+.bg-color-black {
+  background-color: var(--color-black);
+}
+
+.color-gray {
+  color: var(--color-gray);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-red-hover:hover {
+  transition: color 0.2s ease-in-out;
+  color: var(--color-red);
+}

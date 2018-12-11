@@ -1,0 +1,7 @@
+.padding-top-md {
+  padding-top: var(--margin-md);
+}
+
+.padding-bottom-md {
+  padding-bottom: var(--margin-md);
+}
